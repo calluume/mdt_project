@@ -1,0 +1,3 @@
+[timeout:900][out:json][bbox:53.484471, -2.233376,53.494043, -2.216197];
+(way['name'='Oldham Road'];);(._;>;);
+out;

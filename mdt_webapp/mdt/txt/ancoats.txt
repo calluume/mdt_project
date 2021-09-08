@@ -1,0 +1,8 @@
+[timeout:900][out:json];
+area(3600088084)->.a;
+    (
+        way(area.a)
+            ['name'='Great Ancoats Street'];
+        node(w)(area.a);
+    );
+out;

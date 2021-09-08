@@ -1,0 +1,25 @@
+[timeout:900][out:json];
+(area(3609070835);area(3609070834);)->.a;
+    (
+        way(area.a)
+            ['name']
+            ['highway']
+            ['highway' !~ 'path']
+            ['highway' !~ 'pedestrian']
+            ['highway' !~ 'steps']
+            ['highway' !~ 'raceway']
+            ['highway' !~ 'bridleway']
+            ['highway' !~ 'proposed']
+            ['highway' !~ 'construction']
+            ['highway' !~ 'elevator']
+            ['highway' !~ 'bus_guideway']
+            ['highway' !~ 'footway']
+            ['highway' !~ 'cycleway']
+            ['highway' !~ 'crossing']
+            ['foot' !~ 'yes']
+            ['access' !~ 'private']
+            ['access' !~ 'no']
+            ['area' !~ 'yes'];
+        node(w)(area.a);
+    );
+out;
